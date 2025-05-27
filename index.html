@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje mapa bodů</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-XQoYMqMTK8Lvdl/Ea0sA2B6e/xv1YFvTlbRkY5Cz5uM=" crossorigin=""/>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="modal" class="hidden">
+    <textarea id="note" placeholder="Poznámka..."></textarea>
+    <input type="file" id="photo" accept="image/*">
+    <button id="savePoint">Uložit bod</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j7k1rWb+XxGP+eUkS1IjRZg6Dxd+Jb3w50LGfH0=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>
